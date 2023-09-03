@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        .primary {
+            color: #E527B2;
+        }
+
+        .primary-font{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body id="body" class="bg-[#F8F8F8] primary-font">
+    <!-- banner section -->
+
+    <section class=" bg-[#F9F6E2] ">
+        <div class="max-w-5xl flex  flex-col-reverse md:flex-row justify-between  items-center mx-auto ">
+
+            <div class="left-container flex-1 text-center">
+                <p class="text-[#111] text-base font-medium mb-4">---SALE FEVER---</p>
+                <h2 class="text-[#111] text-3xl font-bold w-80 mx-auto my-4">Purchase TK 200 or above & get <span
+                        class="primary ">20% off</span></h2>
+
+
+                <div class="promo flex justify-center gap-4 my-10 items-center ">
+                    <p class="text-[#111] text-sm font-medium">Use Promo Code</p>
+                    <button class="text-white bg-[#E527B2] py-1 px-4 rounded-md ">SELL200</button>
+                </div>
+            </div>
+            <div class="right-container flex-1 my-10 ">
+                <img class="w-3/4 mx-auto" src="./images/Summer 1.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <main class="max-w-5xl mx-auto my-20 ">
+
+        <div class="grid mr-6 ml-2   grid-cols-1  md:mx-0 md:mr-2 md:grid-cols-11 gap-6">
+
+            <div class="col-span-8 container mx-2">
+
+                <div class="Kitchenware max-[320px]:mx-6 max-[375px]:mx-10 max-[450px]:mx-14 md:mx-0 ">
+                    <h2 class="text-xl font-bold text-[#111] mb-2 ">Kitchenware</h2>
+
+                    <div class="card-container grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div onclick="k_accesorries()" class=" cursor-pointer card   bg-base-100 shadow-xl rounded ">
+                            <figure class=" py-3 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod1.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="k-accesorries-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K.
+                                Accessories </p>
+                            <p class=" text-[#111111] text-opacity-50 font-medium text-center mb-4"><span
+                                    id="k-accesorries-price">39.00</span> TK</p>
+
+                        </div>
+
+                        <div onclick="k_accesorries_mini()" class=" cursor-pointer card  bg-base-100 shadow-xl rounded">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod2.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="k-accesorries-mini-name" class="text-sm font-bold text-[#111] text-center mb-2 ">K.
+                                Accessories Mini</p>
+                            <p id="k-accesorries-mini-price"
+                                class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">25.00 TK</p>
+
+                        </div>
+
+                        <div onclick="home_cooker()" class="card  cursor-pointer  bg-base-100 shadow-xl rounded">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod3.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="home-cooker-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Home Cooker
+                            </p>
+                            <p id="home-cooker-price"
+                                class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00 TK</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+                <div class="Sportswear mt-16  max-[320px]:mx-6 max-[375px]:mx-10 max-[450px]:mx-14 md:mx-0">
+                    <h2 class="text-xl font-bold text-[#111] mb-2 ">Sportswear</h2>
+
+                    <div class="card-container grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div onclick="cap()" class="card cursor-pointer   bg-base-100 shadow-xl rounded ">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod4.png" alt="" class="w-24" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="cap-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Sports Back Cap</p>
+                            <p id="cap-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">49.00
+                                TK</p>
+
+                        </div>
+
+                        <div onclick="jersey()" class="card cursor-pointer  bg-base-100 shadow-xl rounded ">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod5.png" alt="" class="w-16" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="jersey-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Full Jersey Set
+                            </p>
+                            <p id="jersey-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">
+                                69.00 TK</p>
+
+                        </div>
+
+                        <div onclick="cates()" class="card cursor-pointer   bg-base-100 shadow-xl rounded ">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod6.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="cates-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Sports cates</p>
+                            <p id="cates-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">
+                                159.00 TK</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+                <div class="Furniture mt-16 max-[320px]:mx-6 max-[375px]:mx-10 max-[450px]:mx-14 md:mx-0">
+                    <h2 class="text-xl font-bold text-[#111] mb-2 ">Furniture</h2>
+
+                    <div class="card-container grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div onclick="chair()" class="card cursor-pointer   bg-base-100 shadow-xl rounded">
+                            <figure class=" py-6 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod7.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="chair-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Single Relax
+                                Chair</p>
+                            <p id="chair-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">
+                                185.00 TK</p>
+
+                        </div>
+
+                        <div onclick="play()" class="card cursor-pointer  bg-base-100 shadow-xl rounded">
+                            <figure class=" py-7 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod8.png" alt="" class="w-16" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="play-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Children play</p>
+                            <p id="play-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">
+                                299.00 TK</p>
+
+                        </div>
+
+                        <div onclick="sofa()" class="card cursor-pointer   bg-base-100 shadow-xl rounded">
+                            <figure class=" py-8 bg-slate-200 m-4 rounded-sm ">
+                                <img src="./images/prod9.png" alt="" class="w-20" />
+                            </figure>
+
+                            <div class="rating rating-sm  mx-auto my-3 ">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#facc15]" />
+                            </div>
+
+
+                            <p id="sofa-name" class="text-sm font-bold text-[#111] text-center mb-2 ">Flexible Sofa</p>
+                            <p id="sofa-price" class=" text-[#111111] text-opacity-50 font-medium text-center mb-4">
+                                339.00 TK</p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="purchase min-[220px]:col-span-7 min-[320px]:ml-10 min-[375px]:col-span-5 min-[375px]:ml-14 min-[420px]:col-span-4 ml-14 md:ml-0   md:col-span-3 mr-2 mt-9  md:mx-0  ">
+                <div class="  bg-base-100 shadow-xl rounded p-4 ">
+
+                    <h4 class="font-semibold text-base  mb-10 lg:mb-2 ">Have coupon?</h4>
+                    <div class="input flex  flex-col mx-auto lg:flex-row justify-center ">
+                        <input id="couponField" class="bg-slate-100 w-36 text-s px-2 py-2 " type="text"
+                            placeholder="Coupon code">
+                        <button disabled onclick="discount()" id="apply-btn"
+                            class="  bg-slate-500 py-2 px-4 mt-2 mb-8 w-36 lg:mb-0 lg:mt-0 lg:py-2 lg:px-4  text-white font-semibold cursor-not-allowed   rounded-r-md   ">Apply</button>
+                    </div>
+                </div>
+
+                <div class="make-puschase bg-base-100 shadow-xl rounded p-4 mt-6">
+
+
+                    <div id="product-list" class="items text-[#111] text-sm font-medium my-3">
+
+
+
+
+                    </div>
+
+
+
+                    <hr>
+                    <div class="price">
+                        <p class="text-[#111] text-sm font-medium my-3">Total price: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="totalPrice">00.00</span> Tk </span></p>
+                        <p class="text-[#111] text-sm font-medium my-3">Discount: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="totalDiscount">00.00</span> TK</span></p>
+                        <p class="text-[#111] text-sm font-medium my-3">Total: <span
+                                class=" text-[#111111] text-opacity-50 font-medium text-sm "><span
+                                    id="price-Id">00.00</span> TK</span></p>
+                        <hr>
+
+                    </div>
+                    <button disabled onclick="my_modal_5.showModal()" id="purchase-btn"
+                        class=" bg-slate-500 cursor-not-allowed  py-2 px-12 mt-4  text-sm ml-1 md:px-10 lg:px-12 lg:ml-3  text-white font-semibold rounded-md   ">Make
+                        Purchase</button>
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <dialog id="my_modal_5" class="modal text-center modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <img class="mx-auto w-24 mt-4" src="./images/congo.png" alt="">
+                            <h3 class="font-bold text-4xl mt-2 ">Congratulations</h3>
+                            <p class="py-0 pt-2 md:py-4">Your Purchase the product</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button onclick="reset()" class="mx-auto text-white bg-[#E527B2] py-1 px-4 rounded-md ">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </main>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>

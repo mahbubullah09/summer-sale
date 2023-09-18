@@ -12,6 +12,8 @@ function setName(name) {
 
 
 
+    
+
 }
 
 
@@ -29,6 +31,9 @@ function setPrice(itemPrice) {
 
 
 
+
+
+
     // for price section 
 
     const priceId = document.getElementById('price-Id');
@@ -39,6 +44,8 @@ function setPrice(itemPrice) {
     const priceFormatted = priceNumber.toFixed(2);
 
     priceId.innerText = priceFormatted;
+
+
 
 
 
@@ -107,11 +114,18 @@ function discount() {
 
 }
 
-function reset(){
 
 
-    console.log("connect");
 
+ 
+
+
+// reset attribute 
+
+
+
+const resetId = document.getElementById('home');
+resetId.addEventListener('click', function () {
 
     const resetTotalPrice = document.getElementById('totalPrice');
     resetTotalPrice.innerHTML = '00.00';
@@ -144,56 +158,9 @@ function reset(){
     const couponId = document.getElementById('couponField');
    
     couponId.value = '';
-
-}
-
-
-
- 
-
-
-
-// reset attribute 
-
-
-
-// const resetId = document.getElementById('home');
-// resetId.addEventListener('click', function () {
-
-//     const resetTotalPrice = document.getElementById('totalPrice');
-//     resetTotalPrice.innerHTML = '00.00';
-
-//     const resetPrice = document.getElementById('price-Id');
-//     resetPrice.innerHTML = '00.00';
-
-//     const resetDuscount = document.getElementById('totalDiscount');
-//     resetDuscount.innerHTML = '00.00';
-
-//     const productId = document.getElementById('product-list');
-//     productId.innerHTML = '';
-
-
-//     const purchaseId = document.getElementById('purchase-btn');
-//     purchaseId.classList.remove('cursor-pointer')
-//     purchaseId.classList.remove('bg-[#E527B2]')
-
-//     purchaseId.setAttribute("disabled", "");
-//     purchaseId.classList.add('bg-slate-500');
-
-
-//     const applyId = document.getElementById('apply-btn');
-//     applyId .classList.remove('cursor-pointer')
-//     applyId .classList.remove('bg-[#E527B2]')
-
-//     applyId .setAttribute("disabled", "");
-//     applyId .classList.add('bg-slate-500');
-
-//     const couponId = document.getElementById('couponField');
-   
-//     couponId.value = '';
    
 
-// })
+})
 
 
 
